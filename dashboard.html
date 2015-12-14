@@ -1,0 +1,215 @@
+<html lang="fr"><head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Application de Gestion des Inscriptions aux Cours Optionnels">
+        <meta name="author" content="Gicoteurs">
+
+            <title>Pages</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    <link href="/inscriptions/favicon.ico" type="image/x-icon" rel="icon"><link href="/inscriptions/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="/inscriptions/css/bootstrap.min.css">        <link rel="stylesheet" href="/inscriptions/css/font-awesome.min.css">        <link rel="stylesheet" href="/inscriptions/css/../components/chosen/chosen.min.css">        <link rel="stylesheet" href="/inscriptions/css/chosen.bootstrap.css">        <link rel="stylesheet" href="/inscriptions/css/../components/bootstrap-datetimepicker-2.3.4/css/bootstrap-datetimepicker.min.css">                    <link rel="stylesheet" href="/inscriptions/css/../components/tablesorter/css/theme.bootstrap.min.css">        <link rel="stylesheet" href="/inscriptions/css/gico.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style type="text/css"></style></head>
+
+    <body>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Afficher/Masquer le menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/inscriptions/dashboard">
+                        <img src="/inscriptions/img/gico.logo.png" alt="Logo GICO" class="application-logo">GICO</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                        <a href="/inscriptions/utilisateurs/inscription"><i class="fa fa-user-plus"></i> Inscription</a>                        </li>
+                        <li>
+                        <a href="/inscriptions/utilisateurs/connexion"><i class="fa fa-sign-in"></i> Connexion</a>                        </li>
+                                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <i class="fa fa-bullhorn fa-2x"></i>&nbsp;&nbsp;&nbsp;
+                        <span class="lead" style="margin-bottom: 0px;">Des utilisateurs ont créé un compte et sont en attente de validation par l'administrateur.</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-danger">
+                    <span class="pull-left"></span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i> valider les utilisateurs en attente</span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-violet">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="text-center col-xs-3">
+                        <i class="fa fa-clock-o fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9">
+                        <div>La rubrique au quotidien permet d'effectuer la plupart des opérations courantes. Vous pouvez ainsi envoyer des emails aux utilisateurs inscrits et imprimer des feuilles d'émargement par parcours, module ou promotion.</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-violet">
+                    <span class="pull-left">accéder à la rubrique "Au quotidien"</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-orange">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="text-center col-xs-3">
+                        <i class="fa fa-list-alt fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9">
+                        <div>La synthèse vous permet d'afficher pour chaque parcours, les groupes associés et les étudiants inscrits dans ces groupes. Une synthèse étudiant est également disponible pour afficher les options d'un étudiant.</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-orange">
+                    <span class="pull-left">voir la synthèse</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-calendar fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">12</div>
+                        <div>période(s)</div>
+                    </div>
+                </div>
+            </div>
+            <a href="<?= $this->Url->build(['controller' => 'periodes']); ?>">
+                <div class="panel-footer">
+                    <span class="pull-left">voir l'ensemble des périodes</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-graduation-cap fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div><span class="big">3</span> mention(s)</div>
+                        <div><span class="big">5</span> spécialité(s)</div>
+                        <div><span class="big">1</span> parcours</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-success">
+                    <span class="pull-left">voir la hiérarchie universitaire</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-cubes fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">123</div>
+                        <div>unité(s) d'enseignement</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-warning">
+                    <span class="pull-left">voir les unités d'enseignement</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-users fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge"><?= $nb_utilisateurs ?></div>
+                        <div>utilisateur(s)</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer text-danger">
+                    <span class="pull-left">voir les utilisateurs</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+        <!-- /container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="/inscriptions/js/jquery-1.11.3.min.js"></script>        <script src="/inscriptions/js/bootstrap.min.js"></script>        <script src="/inscriptions/js/../components/bootstrap-datetimepicker-2.3.4/js/bootstrap-datetimepicker.js"></script>        <script src="/inscriptions/js/../components/bootstrap-datetimepicker-2.3.4/js/locales/bootstrap-datetimepicker.fr.js"></script>        <script src="/inscriptions/js/../components/tablesorter/js/jquery.tablesorter.min.js"></script>        <script src="/inscriptions/js/../components/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>        <script src="/inscriptions/js/../components/chosen/chosen.jquery.min.js"></script>        <script src="/inscriptions/js/gico.js"></script>        
+    
+
+<style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style></body></html>

@@ -1,0 +1,65 @@
+<html lang="fr"><head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Application de Gestion des Inscriptions aux Cours Optionnels">
+        <meta name="author" content="Gicoteurs">
+
+            <title>Se connecter</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    <link href="/frontGico/favicon.ico" type="image/x-icon" rel="icon"><link href="/frontGico/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="/frontGico/css/bootstrap.min.css">        <link rel="stylesheet" href="/frontGico/css/font-awesome.min.css">        <link rel="stylesheet" href="/frontGico/css/../components/chosen/chosen.min.css">        <link rel="stylesheet" href="/frontGico/css/chosen.bootstrap.css">        <link rel="stylesheet" href="/frontGico/css/../components/bootstrap-datetimepicker-2.3.4/css/bootstrap-datetimepicker.min.css">                    <link rel="stylesheet" href="/frontGico/css/../components/tablesorter/css/theme.bootstrap.min.css">        <link rel="stylesheet" href="/frontGico/css/gico.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style type="text/css"></style></head>
+
+    <body>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Afficher/Masquer le menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/frontGico/dashboard">
+                        <img src="/frontGico/img/gico.logo.png" alt="Logo GICO" class="application-logo">GICO</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                        <a href="/frontGico/inscription.html"><i class="fa fa-user-plus"></i> Inscription</a>                        </li>
+                        <li>
+                        <a href="/frontGico/connexion.html"><i class="fa fa-sign-in"></i> Connexion</a>                        </li>
+                                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+
+        <div class="col-md-4">
+    <h2>Connexion</h2>
+    <hr class="colorgraph">
+    <form method="post" accept-charset="utf-8" role="form" action="/frontGico/utilisateurs/connexion"><div style="display:none;"><input type="hidden" name="_method" value="POST"></div>        <div class="form-group"><label class="control-label" for="identifiant">Identifiant</label><input type="text" name="identifiant" id="identifiant" class="form-control"></div>        <div class="form-group"><label class="control-label" for="motdepasse">Mot de passe</label><input type="password" name="motdepasse" id="motdepasse" class="form-control"></div>        <div class="submit"><input type="submit" class="btn btn-primary" value="Se connecter"></div>    </form></div>        </div>
+        <!-- /container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="/frontGico/js/jquery-1.11.3.min.js"></script>        <script src="/inscriptions/js/bootstrap.min.js"></script>        <script src="/frontGico/js/../components/bootstrap-datetimepicker-2.3.4/js/bootstrap-datetimepicker.js"></script>        <script src="/frontGico/js/../components/bootstrap-datetimepicker-2.3.4/js/locales/bootstrap-datetimepicker.fr.js"></script>        <script src="/frontGico/js/../components/tablesorter/js/jquery.tablesorter.min.js"></script>        <script src="/frontGico/js/../components/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>        <script src="/frontGico/js/../components/chosen/chosen.jquery.min.js"></script>        <script src="/frontGico/gico.js"></script>        
+    
+
+<style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style></body></html>
